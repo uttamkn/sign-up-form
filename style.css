@@ -134,12 +134,42 @@ fieldset input {
     min-width: 11rem;
 }
 
-:focus {
+form input:focus {
     outline: none;
     transition: 300ms all ease-in-out;
+    /* border: 1px solid rgb(207, 153, 53);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
-input:focus {
-    border: 1px solid rgb(207, 153, 53);
+form input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid red;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form input:focus:valid {
+    border: 1px solid green;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button[type='submit'] {
+    background-color: rgb(207, 153, 53);
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    min-width: 8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: white;
+}
+
+button[type='submit']:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 100ms all ease-in-out;
+}
+
+button[type='submit']:active {
+    box-shadow: none;
 }

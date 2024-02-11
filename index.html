@@ -26,7 +26,7 @@
         <div class="welcome-text2">
             You <em>know</em> you want to.
         </div>
-        <form action="#">
+        <form id="sign-up" action="#">
             <h4>Let's do this!</h4>
             <div class="container">
                 <fieldset>
@@ -46,23 +46,27 @@
                         <input type="email" id="email" name="email" placeholder="example@foo.com" required>
                     </label>
                     <label for="phoneNumber">
-                        PHONE NUMBER
-                        <input type="text" id="phoneNumber" name="phoneNumber" pattern="/^(\d{10}|\d{3}[-\s]\d{3}[-\s]\d{4})$/">
+                        *PHONE NUMBER
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
                     </label>
                 </fieldset>
 
                 <fieldset>
                     <label for="password">
                         *PASSWORD
-                        <input type="password" name="password" id="password" pattern="/^.{8,}$/" required>
+                        <input type="password" name="password" id="password" pattern=".{8,}" required>
                     </label>
                     <label for="comfirmPassword">
                         *CONFIRM PASSWORD
-                        <input type="password" id="confirmPassword" pattern="/^.{8,}$/" required>
+                        <input type="password" id="confirmPassword" pattern=".{8,}" required>
                     </label>
                 </fieldset>
             </div>
         </form>
+        <button type="submit" form="sign-up">Create Account</button>
+        <div class="log-in">
+
+        </div>
     </div>
 </body>
 </html>
