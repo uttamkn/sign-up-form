@@ -105,7 +105,7 @@ form {
     align-items: flex-start; 
 }
 
-form > h2 {
+form > h4 {
     margin-bottom: 1.1rem;
     color: #2b2a2a;
     font-weight: 600;
@@ -121,13 +121,15 @@ fieldset {
 
 fieldset > label {
     font-size: 0.55rem;
+    letter-spacing: 1.4px;
+    color: #2b2a2a;
 }
 
 fieldset input {
     display: block;
     border: 1px solid #a7a6a6;
     border-radius: 4px;
-    padding: 0.3rem;
-    font-size: 0.7rem;
+    padding: 0.33rem;
+    font-size: 0.65rem;
     min-width: 11rem;
 }

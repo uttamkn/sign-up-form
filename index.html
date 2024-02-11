@@ -27,27 +27,39 @@
             You <em>know</em> you want to.
         </div>
         <form action="#">
-            <h2>Let's do this!</h2>
+            <h4>Let's do this!</h4>
             <div class="container">
                 <fieldset>
                     <label for="first_name">
-                        FIRST NAME
-                        <input type="text" id="first_name" name="first_name" required>
+                        *FIRST NAME
+                        <input type="text" id="first_name" name="first_name" placeholder="Elon" required>
                     </label>
                     <label for="last_name">
                         LAST NAME
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" id="last_name" name="last_name" placeholder="Musk">
                     </label>
                 </fieldset>
                     
                 <fieldset>
-                    <label for=""><input type="text"></label>
-                    <label for=""><input type="text"></label>
+                    <label for="email">
+                        *EMAIL
+                        <input type="email" id="email" name="email" placeholder="example@foo.com" required>
+                    </label>
+                    <label for="phoneNumber">
+                        PHONE NUMBER
+                        <input type="text" id="phoneNumber" name="phoneNumber" pattern="/^(\d{10}|\d{3}[-\s]\d{3}[-\s]\d{4})$/">
+                    </label>
                 </fieldset>
 
                 <fieldset>
-                    <label for=""><input type="text"></label>
-                    <label for=""><input type="text"></label>
+                    <label for="password">
+                        *PASSWORD
+                        <input type="password" name="password" id="password" pattern="/^.{8,}$/" required>
+                    </label>
+                    <label for="comfirmPassword">
+                        *CONFIRM PASSWORD
+                        <input type="password" id="confirmPassword" pattern="/^.{8,}$/" required>
+                    </label>
                 </fieldset>
             </div>
         </form>
