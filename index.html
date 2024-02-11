@@ -54,18 +54,18 @@
                 <fieldset>
                     <label for="password">
                         *PASSWORD
-                        <input type="password" name="password" id="password" pattern=".{8,}" required>
+                        <input type="password" name="password" title="Password must contain at least 8 characters" id="password" pattern=".{8,}" required>
                     </label>
                     <label for="comfirmPassword">
                         *CONFIRM PASSWORD
-                        <input type="password" id="confirmPassword" pattern=".{8,}" required>
+                        <input type="password" id="confirmPassword" title="Password must contain at least 8 characters" pattern=".{8,}" required oninput="validateConfirmPassword()">
                     </label>
                 </fieldset>
             </div>
         </form>
         <button type="submit" form="sign-up">Create Account</button>
         <div class="log-in">
-
+            Already have an account? <a href="#">Log in</a>
         </div>
     </div>
 </body>
