@@ -133,3 +133,13 @@ fieldset input {
     font-size: 0.65rem;
     min-width: 11rem;
 }
+
+:focus {
+    outline: none;
+    transition: 300ms all ease-in-out;
+}
+
+input:focus {
+    border: 1px solid rgb(207, 153, 53);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
