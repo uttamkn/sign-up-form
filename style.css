@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: max(18px, 2.5vh);
+    --theme-bg-color: rgb(231, 190, 136);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+.hero-image {
+    position: relative;
+    background-image: url(./imgs/kristijan-arsov-tcw3nwoAgvs-unsplash.jpg);
+    background-attachment: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+.main {
+    flex: 1.5;
+    background-color: var(--theme-bg-color);
+}
