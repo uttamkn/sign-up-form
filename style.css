@@ -61,4 +61,12 @@ body {
 .main {
     flex: 1.3;
     background-color: var(--theme-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > img{
+    height: max(200px, 10rem);
 }
